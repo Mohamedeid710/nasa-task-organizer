@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: radial-gradient(circle at center, #0b1532 0%, #1c2a57 80%);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.container {
+  background: linear-gradient(145deg, #1a2e4d, #334a7d);
+  border: 2px solid #4196ff;
+  border-radius: 20px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 0 15px 3px #4178ffaa;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a8d0ff;
+  text-shadow: 0 0 10px #7a9cffaa;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: #2e4a8c;
+  color: #d4e1ff;
+  box-shadow: inset 0 0 5px #2e4a8c;
+  transition: background 0.3s, color 0.3s;
+}
+
+input[type="text"]::placeholder {
+  color: #a2b9ffcc;
+}
+
+input[type="text"]:focus {
+  background: #4169e1;
+  color: #ffffff;
+  outline: none;
+}
+
+button {
+  background: #1e40ff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 30px;
+  color: #d4e1ff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px #1e40ff88;
+}
+
+button:hover, button:focus {
+  background: #448aff;
+  box-shadow: 0 0 12px #4478ffcc;
+}
+
+ul {
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding: 16px 56px 16px 24px;
+  margin-bottom: 16px;
+  background: #274582;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #cdd9ff;
+  box-shadow: 0 2px 8px #18305c99;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #3562cc;
+  color: #f0f8ff;
+}
+
+li.checked {
+  text-decoration: line-through;
+  color: #8ea7d7;
+  background: #182e5f;
+  box-shadow: none;
+  cursor: default;
+}
+
+li .delete-btn {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff4c4c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 0 6px #ff4c4caa;
+  transition: background 0.3s ease;
+}
+
+li .delete-btn:hover {
+  background: #d63030;
+  box-shadow: 0 0 10px #d63030dd;
+}
+
