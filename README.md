@@ -1,6 +1,3 @@
-# NASA-TASK-ORGANIZER
-Software Engineering Lab 
-
 # NASA Task Organizer App
 
 ## Project Idea
